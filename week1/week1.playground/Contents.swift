@@ -1,4 +1,5 @@
-for i in 1...100 {
+func checkWeekdayEmoji(i: Int) {
+    
     if i % 7 == 1{
         print("Monday😩")
     }else if i % 7 == 2{
@@ -15,3 +16,5 @@ for i in 1...100 {
         print( "Sunday🥹")
     }
 }
+
+checkWeekdayEmoji(i:12)
