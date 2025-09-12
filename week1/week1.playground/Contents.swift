@@ -1,17 +1,17 @@
-for i in 1...7 {
-    if i == 1{
+for i in 1...100 {
+    if i % 7 == 1{
         print("Monday😩")
-    }else if i == 2{
+    }else if i % 7 == 2{
         print("Tuesday☹️")
-    }else if i == 3{
+    }else if i % 7 == 3{
         print("Wednesday🙁")
-    }else if i == 4{
+    }else if i % 7 == 4{
         print("Thursday😕")
-    }else if i == 5{
+    }else if i % 7 == 5{
         print("Friday🙂")
-    }else if i == 6{
+    }else if i % 7 == 6{
         print( "Saturday😄")
-    }else if i == 7{
+    }else if i % 7 == 0{
         print( "Sunday🥹")
     }
 }
