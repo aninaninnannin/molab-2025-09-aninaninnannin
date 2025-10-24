@@ -182,22 +182,28 @@ struct AddEventView: View {
     @State private var date: Date = Date()
     @State private var notes: String = ""
     @State private var repeatCycle: RepeatCycle = .none
+    @State private var selectedPet: PetType
 
     let defaultPet: PetType
     let onSave: (PetEvent) -> Void
+
+    init(defaultPet: PetType, onSave: @escaping (PetEvent) -> Void) {
+        self.defaultPet = defaultPet
+        self.onSave = onSave
+        _selectedPet = State(initialValue: defaultPet)
+    }
 
     var body: some View {
         NavigationStack {
             Form {
                 Section("Pet") {
-                    Picker("Pet", selection: .constant(defaultPet)) {
+                    Picker("Pet", selection: $selectedPet) {
                         ForEach(PetType.allCases) { p in
                             Text(p.rawValue).tag(p)
                         }
                     }
                     .pickerStyle(.segmented)
-                    .disabled(true)
-                    Text("This event will be created for your \(defaultPet.rawValue.lowercased()).")
+                    Text("This event will be created for your \(selectedPet.rawValue.lowercased()).")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -228,7 +234,7 @@ struct AddEventView: View {
     }
 
     private func save() {
-        let e = PetEvent(pet: defaultPet, title: title.trimmingCharacters(in: .whitespaces), date: date, notes: notes, repeatCycle: repeatCycle)
+        let e = PetEvent(pet: selectedPet, title: title.trimmingCharacters(in: .whitespaces), date: date, notes: notes, repeatCycle: repeatCycle)
         onSave(e)
         dismiss()
     }

@@ -1,0 +1,2 @@
+Track pet-care deadlines for cats and dogs with clear day-based countdowns. Create events, set repeat cycles, and keep everything locally on-device. The user is able to slide the event to delete or finish the count down and move to the next round. 
+I use the workout timer, my pervious assignment as an example and learn how to do the day count down with chatgpt. The prompt is "how to make a day tracker using swift".

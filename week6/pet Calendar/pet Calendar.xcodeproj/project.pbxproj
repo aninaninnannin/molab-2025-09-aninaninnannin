@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5A2554FC2EABBB60007944CB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A2554FA2EABBB4B007944CB /* Readme.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5A2554EC2EAB28F5007944CB /* pet Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pet Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2554FA2EABBB4B007944CB /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		5A2554E32EAB28F5007944CB = {
 			isa = PBXGroup;
 			children = (
+				5A2554FA2EABBB4B007944CB /* Readme.md */,
 				5A2554EE2EAB28F5007944CB /* pet Calendar */,
 				5A2554ED2EAB28F5007944CB /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2554FC2EABBB60007944CB /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
