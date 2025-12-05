@@ -10,9 +10,33 @@
 		5A4AF4382EE24EB3002D5927 /* music player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5A4AF4672EE32834002D5927 /* Exceptions for "music player" folder in "music player" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				readme.md,
+			);
+			target = 5A4AF4372EE24EB3002D5927 /* music player */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		5A4AF4682EE32834002D5927 /* Exceptions for "music player" folder in "Compile Sources" phase from "music player" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 5A4AF4342EE24EB3002D5927 /* Sources */;
+			membershipExceptions = (
+				readme.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5A4AF43A2EE24EB3002D5927 /* music player */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5A4AF4672EE32834002D5927 /* Exceptions for "music player" folder in "music player" target */,
+				5A4AF4682EE32834002D5927 /* Exceptions for "music player" folder in "Compile Sources" phase from "music player" target */,
+			);
 			path = "music player";
 			sourceTree = "<group>";
 		};
