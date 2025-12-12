@@ -21,3 +21,4 @@ Apple Developer Documentation — SwiftUI
     •    Apple Developer Documentation — AVAudioSession
     •    Apple SF Symbols — icons used in UI
     •    Visual inspiration — Cyberpunk: Edgerunners (Studio Trigger, 2022) (visual reference only)
+    •    chatgpt
